@@ -36,7 +36,6 @@ const Navigation = ({ darkMode, toggleTheme }) => {
             DevPortfolio
           </NavLink>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <NavLink
@@ -59,7 +58,6 @@ const Navigation = ({ darkMode, toggleTheme }) => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
             <button
               onClick={toggleTheme}
@@ -79,7 +77,6 @@ const Navigation = ({ darkMode, toggleTheme }) => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3 animate-fadeIn">
             {navLinks.map((link) => (

@@ -28,10 +28,14 @@ const HomePage = ({ darkMode }) => {
   ];
 
   return (
-    <main>
-      <div className=" layout flex flex-col-reverse md:flex-row items-center justify-between ">
-        <section className="w-100">
-          <img className=" md:w-50 md:h-50 rounded-full object-cover " src={picture} alt="" />
+    <main className="">
+      <div className=" layout flex flex-col-reverse md:flex-row items-center justify-between  ">
+        <section className="mt-20">
+          <img
+            className="w-full h-auto max-w-xs md:max-w-md rounded-full object-cover"
+            src={picture}
+            alt=""
+          />
         </section>
         <section className=" flex items-center justify-center relative p-6 ">
           <div className="max-w-5xl mx-auto text-center relative z-10">

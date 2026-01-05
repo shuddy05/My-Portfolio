@@ -92,12 +92,7 @@ export const services = [
     title: "UI/UX Design",
     icon: "Palette",
     description: "Beautiful, intuitive interfaces that users love",
-    features: [
-      "User Research",
-      "Wireframing",
-      "Prototyping",
-      "Design Systems",
-    ],
+    features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
     price: "From $2,000",
   },
   {
@@ -116,12 +111,7 @@ export const services = [
     title: "Custom Solutions",
     icon: "Code",
     description: "Tailored development for unique business needs",
-    features: [
-      "Consulting",
-      "MVP Development",
-      "Code Review",
-      "Team Training",
-    ],
+    features: ["Consulting", "MVP Development", "Code Review", "Team Training"],
     price: "Custom Quote",
   },
 ];
@@ -218,7 +208,14 @@ export const blogPosts = [
   },
 ];
 
-export const navLinks = ["home", "about", "projects", "services", "blog", "contact"];
+export const navLinks = [
+  "home",
+  "about",
+  "projects",
+  "services",
+  "blog",
+  "contact",
+];
 
 export const socialLinks = [
   { icon: "Github", href: "#" },
@@ -230,20 +227,24 @@ export const contactInfo = [
   {
     icon: "Mail",
     title: "Email",
-    value: "hello@developer.com",
-    href: "mailto:hello@developer.com",
+    value: "horlabodehyibrahim@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=horlabodehyibrahim@gmail.com",
   },
   {
     icon: "Phone",
     title: "Phone",
-    value: "+1 (234) 567-890",
-    href: "tel:+1234567890",
+    value: "+234 810 887 9508",
+    href: "tel:+2348108879508",
   },
   {
     icon: "Globe",
     title: "Social Links",
     value: null,
-    href: null,
+    socials: [
+      { name: "LinkedIn", href: "https://linkedin.com/in/yourprofile" },
+      { name: "GitHub", href: "https://github.com/shuddy05" },
+      { name: "Twitter", href: "https://twitter.com/undefined__05" },
+    ],
   },
 ];
 

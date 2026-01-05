@@ -9,8 +9,22 @@ const Footer = ({ darkMode }) => {
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
-  
-  const services = ["Web Development", "UI/UX Design", "API Development", "Consulting"];
+
+  const socialIcons = [
+    { Icon: FiGithub, href: "https://github.com/shuddy05" },
+    { Icon: FiLinkedin, href: "#" },
+    {
+      Icon: FiMail,
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=horlabodehyibrahim@gmail.com",
+    },
+  ];
+
+  const services = [
+    "Web Development",
+    "UI/UX Design",
+    "API Development",
+    "Consulting",
+  ];
 
   return (
     <footer
@@ -56,7 +70,9 @@ const Footer = ({ darkMode }) => {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service}>
-                  <span className={darkMode ? "text-slate-400" : "text-slate-600"}>
+                  <span
+                    className={darkMode ? "text-slate-400" : "text-slate-600"}
+                  >
                     {service}
                   </span>
                 </li>
@@ -67,36 +83,20 @@ const Footer = ({ darkMode }) => {
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a
-                href="#"
-                className={`p-3 rounded-lg ${
-                  darkMode
-                    ? "bg-slate-800 hover:bg-slate-700"
-                    : "bg-slate-200 hover:bg-slate-300"
-                } transition-all hover:scale-110`}
-              >
-                <FiGithub className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className={`p-3 rounded-lg ${
-                  darkMode
-                    ? "bg-slate-800 hover:bg-slate-700"
-                    : "bg-slate-200 hover:bg-slate-300"
-                } transition-all hover:scale-110`}
-              >
-                <FiLinkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className={`p-3 rounded-lg ${
-                  darkMode
-                    ? "bg-slate-800 hover:bg-slate-700"
-                    : "bg-slate-200 hover:bg-slate-300"
-                } transition-all hover:scale-110`}
-              >
-                <FiMail className="w-5 h-5" />
-              </a>
+              {socialIcons.map(({ Icon, href }, idx) => (
+                <a
+                  key={idx}
+                  href={href}
+                  target={href.startsWith("mailto:") ? undefined : "_blank"}
+                  className={`p-3 rounded-lg ${
+                    darkMode
+                      ? "bg-slate-800 hover:bg-slate-700"
+                      : "bg-slate-100 hover:bg-slate-200"
+                  } transition-all hover:scale-110`}
+                >
+                  <Icon className="w-6 h-6" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -107,7 +107,8 @@ const Footer = ({ darkMode }) => {
           } text-center ${darkMode ? "text-slate-400" : "text-slate-600"}`}
         >
           <p>
-            © 2025 DevPortfolio. All rights reserved. Built with React & Tailwind CSS
+            <span>@{new Date().getFullYear()}</span> MoshoodPortfolio. All
+            rights reserved. Built with React & Tailwind CSS
           </p>
         </div>
       </div>
