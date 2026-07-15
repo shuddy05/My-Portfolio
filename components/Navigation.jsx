@@ -33,7 +33,7 @@ const Navigation = ({ darkMode, toggleTheme }) => {
             to="/"
             className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent hover:scale-105 transition-transform"
           >
-            DevPortfolio
+            MyPortfolio
           </NavLink>
 
           <div className="hidden md:flex items-center gap-8">

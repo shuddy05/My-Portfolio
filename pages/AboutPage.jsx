@@ -8,7 +8,11 @@ const AboutPage = ({ darkMode }) => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fadeInUp">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">About Me</h1>
-          <p className={`text-xl ${darkMode ? "text-slate-400" : "text-slate-600"}`}>
+          <p
+            className={`text-xl ${
+              darkMode ? "text-slate-400" : "text-slate-600"
+            }`}
+          >
             Passionate developer with 5+ years of experience
           </p>
         </div>
@@ -29,11 +33,12 @@ const AboutPage = ({ darkMode }) => {
                 darkMode ? "text-slate-400" : "text-slate-600"
               } mb-6 leading-relaxed`}
             >
-              I'm a passionate Full-Stack Developer with expertise in building
-              scalable web applications. I love turning complex problems into
-              simple, beautiful, and intuitive solutions. My journey in tech
-              started 5 years ago, and I've been fortunate to work with amazing
-              teams and clients worldwide.
+              From graphic design to a B.Sc. in Economics, my transition into
+              web development was fueled by curiosity and a passion for
+              problem-solving. I’m now a full-stack developer passionate about
+              building scalable, intuitive web applications and transforming
+              complex ideas into elegant digital solutions. I’ve been fortunate
+              to work with amazing teams and clients from around the world
             </p>
             <a
               href="#"
@@ -77,7 +82,17 @@ const AboutPage = ({ darkMode }) => {
                       darkMode ? "text-slate-400" : "text-slate-600"
                     }`}
                   >
-                    {exp.description}
+                    {exp.description.map((item, descIdx) => (
+                      <li
+                        key={descIdx}
+                        className={`text-sm ${
+                          darkMode ? "text-slate-400" : "text-slate-600"
+                        } flex items-start gap-2`}
+                      >
+                        <span className="text-cyan-400 ">•</span>
+                        <span className="mb-3">{item.description}</span>
+                      </li>
+                    ))}
                   </p>
                 </div>
               ))}

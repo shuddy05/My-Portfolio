@@ -37,7 +37,7 @@ const HomePage = ({ darkMode }) => {
             alt=""
           />
         </section>
-        <section className=" flex items-center justify-center relative p-6 ">
+        <section className=" flex items-center justify-center relative p-6 mt-11 md:mt-0 ">
           <div className="max-w-5xl mx-auto text-center relative z-10">
             <div className="mb-6 inline-block animate-fadeIn">
               <span
@@ -53,7 +53,7 @@ const HomePage = ({ darkMode }) => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-5xl font-bold mb-6 leading-tight animate-fadeInUp">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-fadeInUp">
               Crafting Digital
               <span className="block bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Experiences That Matter

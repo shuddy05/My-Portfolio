@@ -153,22 +153,27 @@ export const techStack = [
 
 export const experience = [
   {
-    year: "2023 - Present",
+    year: "2024 - Present",
     title: "Senior Full-Stack Developer",
     company: "Tech Innovations Inc.",
-    description: "Leading development of enterprise web applications",
-  },
-  {
-    year: "2021 - 2023",
-    title: "Frontend Developer",
-    company: "Digital Agency Co.",
-    description: "Built responsive websites for Fortune 500 clients",
-  },
-  {
-    year: "2019 - 2021",
-    title: "Junior Developer",
-    company: "StartUp Labs",
-    description: "Developed features for SaaS products",
+    description: [
+      {
+        description:
+          "Building responsive and scalable web applications using modern web technologies",
+      },
+      {
+        description:
+          "Translating design concepts into clean, functional user interfaces",
+      },
+      {
+        description:
+          "Solving real-world problems through thoughtful architecture and user-focused solutions",
+      },
+      {
+        description:
+          "Collaborating with clients and remote teams on projects from concept to deployment",
+      },
+    ],
   },
 ];
 
